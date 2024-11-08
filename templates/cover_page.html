@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cover page list</h1>
+
+    <div>
+        {% for cover in covers %}
+            <div style="width: 200px;
+                margin: 30px auto;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                padding: 15px;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                color: #333;">
+                <h2>{{cover.name}}</h2>
+                <p><strong>SId: </strong>{{cover.sid}}</p>
+                <p><strong>Course Name: </strong>{{cover.course}}</p>
+                <p><strong>University Name: </strong>{{cover.uniName}}</p>
+            </div>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
