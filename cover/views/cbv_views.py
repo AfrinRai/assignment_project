@@ -9,4 +9,4 @@ class CoversListView(ListView):
     """
     model = Cover
     template_name = 'cover_page.html'  # Specify your template name
-    context_object_name = 'covers'  # Use this name in the template to access the list
+    context_object_name = 'cover'  # Use this name in the template to access the list
